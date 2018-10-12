@@ -208,7 +208,8 @@ public class RobotRace extends Base {
         
 
     // Draw hierarchy example.
-        drawHierarchy();
+        //drawHierarchy();
+        drawArrow();
         
         // Draw the axis frame.
         if (gs.showAxes) {
@@ -244,8 +245,9 @@ public class RobotRace extends Base {
     /**
      * Draws a single arrow
      */
-    public void drawArrow() {  
-
+    public void drawArrow() {
+        gl.glColor3f(1, 1, 0);
+        glut.glutSolidCube(1);
     }
  
     /**
