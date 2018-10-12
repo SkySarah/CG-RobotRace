@@ -248,6 +248,8 @@ public class RobotRace extends Base {
     public void drawArrow() {
         gl.glColor3f(1, 1, 0);
         glut.glutSolidCube(1);
+        gl.glColor3f(1, 0, 1);
+        glut.glutSolidCone(2, 10, 30, 10);
     }
  
     /**
